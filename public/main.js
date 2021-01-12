@@ -1558,7 +1558,7 @@ class AuthGuard {
     }
     canActivate(next, state) {
         if (this.authService.isLoggedIn !== true) {
-            this.router.navigate(['sign-in']);
+            this.router.navigate(['login']);
         }
         return true;
     }
