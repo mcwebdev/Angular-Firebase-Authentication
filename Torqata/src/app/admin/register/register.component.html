@@ -1,0 +1,19 @@
+<section class="main" fxLayoutAlign="space-between">
+  <form class="form-2" fxLayout="column">
+    <h1> <span class="sign-up">sign up</span></h1>
+    <p class="">
+      <label for="login"><i class="icon-user"></i>Username</label>
+      <input type="text" class="formControl" placeholder="Username" #userName required>
+    </p>
+    <p class="">
+      <label for="password"><i class="icon-lock"></i>Password</label>
+      <input type="password" class="formControl" placeholder="Password" #userPassword required>
+    </p>
+    <div fxLayout="row">
+      <a href="#" class="log-twitter" (click)="authService.GoogleAuth()">Sign up with Google</a>
+      <input type="submit" name="submit" value="Sign up" (click)="authService.SignIn(userName.value, userPassword.value)">
+    </div>
+
+    <span class="pad">Already have an account? <span class="redirect psuedo" routerLink="/login">Log In</span></span>
+  </form>
+</section>

@@ -1,0 +1,30 @@
+<section class="main" fxLayoutAlign="space-between">
+  <form class="form-2" fxLayout="column">
+    <h1><span class="log-in">Log in</span> or <span class="sign-up">sign up</span></h1>
+    <p class="">
+      <label for="login"><i class="icon-user"></i>Username</label>
+      <input pInputText type="text" class="formControl" placeholder="Username" #userName required>
+    </p>
+    <p class="">
+      <label for="password"><i class="icon-lock"></i>Password</label>
+      <input pInputText type="password" class="formControl" placeholder="Password" #userPassword required>
+    </p>
+
+
+    <div fxLayout="row">
+      <a href="#" class="log-twitter" (click)="authService.GoogleAuth()">Log in with Google</a>
+      <input type="submit" name="submit" value="Log in" (click)="authService.SignIn(userName.value, userPassword.value)">
+    </div>
+
+
+
+
+    <div fxLayout="row" class="forgotPassword">
+      <span class="pad psuedo" routerLink="/forgot-password">Forgot Password?</span>
+    </div>
+
+    <div fxLayout="row" class="redirectToLogin">
+      <span class="pad">Don't have an account?<span class="redirect psuedo" routerLink="/register"> Sign Up</span></span>
+    </div>
+  </form>
+</section>

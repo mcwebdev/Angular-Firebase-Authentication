@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Torqata",
+    "\\Torqata\\src",
+    "\\Torqata\\src\\app",
+    "\\Torqata\\src\\shared-services",
+    "\\Torqata\\src\\shared-services\\auth",
+    "\\Torqata\\src\\shared-services\\guard"
+  ],
+  "SelectedNode": "\\Torqata\\src\\shared-services\\auth\\auth.service.ts",
+  "PreviewInSolutionExplorer": false
+}

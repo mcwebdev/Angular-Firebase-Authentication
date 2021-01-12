@@ -1,0 +1,24 @@
+:host {
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+h2{
+    padding:10px;
+    font-size:32px;
+}
+
+.spacer{
+    margin:10px;
+}
+
+li{
+    margin:15px;
+    font-size:32px;
+}
