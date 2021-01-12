@@ -295,7 +295,7 @@ function FirestoreComponent_li_3_Template(rf, ctx) { if (rf & 1) {
 } if (rf & 2) {
     const item_r1 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Item Added: ", item_r1.torqata, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Item Added: ", item_r1.field, " ");
 } }
 class FirestoreComponent {
     constructor(firestore) {
@@ -304,6 +304,7 @@ class FirestoreComponent {
             newValue: new _Angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('')
         });
         this.items$ = firestore.collection('items').valueChanges();
+        console.log(this.items$, firestore.collection('items'));
     }
     ngOnInit() {
     }

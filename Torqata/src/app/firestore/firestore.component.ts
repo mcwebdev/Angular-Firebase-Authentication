@@ -12,6 +12,7 @@ export class FirestoreComponent implements OnInit {
   items$: Observable<any[]>;
   constructor(private firestore: AngularFirestore) {
     this.items$ = firestore.collection('items').valueChanges();
+    console.log(this.items$, firestore.collection('items'));
   }
 
   ngOnInit(): void {
